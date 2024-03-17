@@ -26,6 +26,50 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.main-button{
+    background-color: #efd6bd;
+    color: #000;
+    appearance: none;
+    margin: 0;
+    border: none;
+    border-radius: 100rem;
+    font-size: 2rem;
+    padding: 10px 40px 12px;
+    font-weight: 300;
+    vertical-align: bottom;
+    cursor: pointer;
+    transition: .3s opacity, .2s transform;
+}
+
+.main-button:hover {
+  opacity: .9;
+}
+
+.body-container{
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-button-container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 50px;
+  animation: main-button-container-animation 1.2s;
+}
+
+@keyframes main-button-container-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
